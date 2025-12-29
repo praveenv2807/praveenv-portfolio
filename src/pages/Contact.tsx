@@ -39,9 +39,9 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "hello@portfolio.dev", href: "mailto:hello@portfolio.dev" },
-    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-    { icon: MapPin, label: "Location", value: "San Francisco, CA", href: "#" },
+    { icon: Mail, label: "Email", value: "praveenpraveen2807@gmail.com", href: "mailto:praveenpraveen2807@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+91 6381795174", href: "tel:+916381795174" },
+    { icon: MapPin, label: "Location", value: "Coimbatore, Tamil Nadu", href: "#" },
   ];
 
   return (

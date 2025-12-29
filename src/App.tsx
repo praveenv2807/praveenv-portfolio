@@ -11,7 +11,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import CodingProfiles from "./pages/CodingProfiles";
 import SocialLinks from "./pages/SocialLinks";
-import Articles from "./pages/Articles";
+
 import Resume from "./pages/Resume";
 import CallToAction from "./pages/CallToAction";
 import NotFound from "./pages/NotFound";
@@ -30,7 +30,7 @@ const AnimatedRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/coding-profiles" element={<CodingProfiles />} />
         <Route path="/social" element={<SocialLinks />} />
-        <Route path="/articles" element={<Articles />} />
+        
         <Route path="/resume" element={<Resume />} />
         <Route path="/cta" element={<CallToAction />} />
         <Route path="*" element={<NotFound />} />

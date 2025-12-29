@@ -46,7 +46,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="mb-6"
             >
-              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <AnimatedLetters delay={0.5} className="gradient-text">
                   PRAVEEN V
                 </AnimatedLetters>
@@ -133,11 +133,10 @@ const Hero = () => {
           className="relative py-16 px-6"
         >
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
               {[
-                { icon: Code2, value: "10+", label: "Projects Completed" },
+                { icon: Code2, value: "3", label: "Projects Completed" },
                 { icon: Briefcase, value: "CSE", label: "Engineering Student" },
-                { icon: Mail, value: "100%", label: "Dedication" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

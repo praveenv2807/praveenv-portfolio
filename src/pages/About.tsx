@@ -7,9 +7,6 @@ const skills = [
   { name: "Frontend", icon: Code2, color: "primary", items: ["React", "TypeScript", "Next.js", "Tailwind CSS"] },
   { name: "Backend", icon: Database, color: "secondary", items: ["Node.js", "Python", "PostgreSQL", "GraphQL"] },
   { name: "Design", icon: Palette, color: "accent", items: ["Figma", "Adobe XD", "UI/UX", "Motion Design"] },
-  { name: "Mobile", icon: Smartphone, color: "primary", items: ["React Native", "Flutter", "iOS", "Android"] },
-  { name: "DevOps", icon: Globe, color: "secondary", items: ["AWS", "Docker", "CI/CD", "Kubernetes"] },
-  { name: "Performance", icon: Zap, color: "accent", items: ["Optimization", "SEO", "Analytics", "Testing"] },
 ];
 
 const About = () => {
@@ -40,7 +37,7 @@ const About = () => {
           </motion.div>
 
           {/* Bio Section */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-20">
+          <div className="max-w-3xl mx-auto mb-20">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -62,59 +59,14 @@ const About = () => {
                     highly functional and user-friendly.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, working on 
-                    personal projects, or participating in coding challenges and hackathons.
+                    I'm always eager to learn and grow, and I believe in turning ideas into 
+                    reality through code. Currently seeking opportunities to contribute to 
+                    impactful projects and collaborate with talented teams.
                   </p>
                 </div>
               </GlassCard>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="relative"
-            >
-              <div className="aspect-square rounded-2xl overflow-hidden glass-card p-1">
-                <div className="w-full h-full rounded-xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center">
-                  <motion.div
-                    animate={{ 
-                      rotate: [0, 360],
-                      scale: [1, 1.1, 1],
-                    }}
-                    transition={{ 
-                      rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-                      scale: { duration: 3, repeat: Infinity },
-                    }}
-                    className="w-48 h-48 rounded-full bg-gradient-to-br from-primary via-secondary to-accent opacity-50 blur-3xl"
-                  />
-                  <span className="absolute font-display text-8xl font-bold gradient-text opacity-80">
-                    {"</>"}
-                  </span>
-                </div>
-              </div>
-              
-              {/* Floating badges */}
-              {["React", "TypeScript", "Node.js"].map((tech, index) => (
-                <motion.div
-                  key={tech}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.8 + index * 0.2, duration: 0.5 }}
-                  className={`absolute glass-card px-3 py-1 text-sm font-accent ${
-                    index === 0 ? "top-4 right-4" : 
-                    index === 1 ? "bottom-4 left-4" : 
-                    "bottom-20 right-0"
-                  }`}
-                  style={{
-                    animation: `float ${3 + index}s ease-in-out infinite`,
-                    animationDelay: `${index * 0.5}s`,
-                  }}
-                >
-                  <span className="text-primary">{tech}</span>
-                </motion.div>
-              ))}
-            </motion.div>
           </div>
 
           {/* Skills Grid */}
