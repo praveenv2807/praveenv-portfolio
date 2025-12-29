@@ -37,8 +37,8 @@ export const Navigation = () => {
                   P
                 </div>
               </motion.div>
-              <span className="font-display text-lg font-semibold tracking-wider gradient-text">
-                PORTFOLIO
+              <span className="font-display text-sm font-semibold tracking-wider gradient-text">
+                PRAVEEN'S PORTFOLIO
               </span>
             </Link>
 
@@ -91,8 +91,8 @@ export const Navigation = () => {
       >
         <div className="mx-4 my-4">
           <div className="glass-card flex items-center justify-between px-4 py-3">
-            <Link to="/" className="font-display text-lg font-bold gradient-text">
-              PORTFOLIO
+            <Link to="/" className="font-display text-sm font-bold gradient-text">
+              PRAVEEN'S PORTFOLIO
             </Link>
             <motion.button
               whileTap={{ scale: 0.9 }}

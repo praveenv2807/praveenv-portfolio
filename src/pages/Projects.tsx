@@ -4,12 +4,16 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { GlowButton } from "@/components/ui/GlowButton";
 import { ExternalLink, Github } from "lucide-react";
 
+import ecommerceThumbnail from "@/assets/ecommerce-thumbnail.jpg";
+import fitnessThumbnail from "@/assets/fitness-thumbnail.jpg";
+import houseRentalThumbnail from "@/assets/house-rental-thumbnail.jpg";
+
 const projects = [
   {
     id: "ecommerce-platform",
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce solution with product catalog, shopping cart, secure checkout, and order management for seamless online shopping experience.",
-    image: "linear-gradient(135deg, #00d4ff20, #8b5cf620)",
+    image: ecommerceThumbnail,
     tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
     link: "#",
     github: "#",
@@ -18,7 +22,7 @@ const projects = [
     id: "fitness-website",
     title: "Fitness Website",
     description: "Comprehensive fitness platform with workout planning, exercise tutorials, progress tracking, and personalized health recommendations.",
-    image: "linear-gradient(135deg, #8b5cf620, #ec489920)",
+    image: fitnessThumbnail,
     tags: ["React", "TypeScript", "Tailwind CSS", "Firebase"],
     link: "#",
     github: "#",
@@ -27,7 +31,7 @@ const projects = [
     id: "house-rental",
     title: "House Rental Website",
     description: "Modern property rental platform with listings, search filters, booking system, and user reviews for finding the perfect rental home.",
-    image: "linear-gradient(135deg, #ec489920, #00d4ff20)",
+    image: houseRentalThumbnail,
     tags: ["React", "Node.js", "MongoDB", "Maps API"],
     link: "#",
     github: "#",
@@ -79,18 +83,12 @@ const Projects = () => {
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     className="aspect-video rounded-xl overflow-hidden mb-6"
-                    style={{ background: project.image }}
                   >
-                    <div className="w-full h-full flex items-center justify-center">
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.5 + index * 0.15, duration: 0.5 }}
-                        className="font-display text-5xl font-bold text-foreground/20"
-                      >
-                        {String(index + 1).padStart(2, "0")}
-                      </motion.div>
-                    </div>
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
                   </motion.div>
 
                   {/* Project Info */}

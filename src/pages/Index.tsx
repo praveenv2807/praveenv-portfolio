@@ -66,9 +66,13 @@ const Hero = () => {
               transition={{ delay: 1.2, duration: 0.6 }}
               className="mb-8"
             >
-              <p className="text-xl md:text-2xl text-muted-foreground font-body max-w-2xl mx-auto">
+              <p className="text-base md:text-lg text-muted-foreground font-body max-w-2xl mx-auto">
                 <TypewriterText delay={1.4}>
-                  Computer Science & Engineering Student • Passionate Developer
+                  Computer Science & Engineering Student
+                </TypewriterText>
+                <br />
+                <TypewriterText delay={1.8}>
+                  Passionate Developer
                 </TypewriterText>
               </p>
             </motion.div>
