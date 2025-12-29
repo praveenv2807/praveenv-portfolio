@@ -52,18 +52,18 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    With over 5 years of experience in web development, I've had the privilege 
-                    of working with startups, agencies, and enterprise companies to create 
-                    impactful digital solutions.
+                    Hi, I'm Praveen V — a Computer Science and Engineering student with a 
+                    deep passion for building innovative digital solutions and exploring 
+                    cutting-edge technologies.
                   </p>
                   <p>
-                    My passion lies in the intersection of design and technology—creating 
-                    experiences that are not only visually stunning but also highly functional 
-                    and accessible to all users.
+                    My journey in tech is driven by curiosity and a love for problem-solving. 
+                    I enjoy creating experiences that are not only visually stunning but also 
+                    highly functional and user-friendly.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing 
-                    to open-source projects, or mentoring aspiring developers.
+                    When I'm not coding, you'll find me exploring new technologies, working on 
+                    personal projects, or participating in coding challenges and hackathons.
                   </p>
                 </div>
               </GlassCard>

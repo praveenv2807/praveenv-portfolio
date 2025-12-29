@@ -35,7 +35,7 @@ const Hero = () => {
                 className="w-2 h-2 rounded-full bg-green-400"
               />
               <span className="text-sm font-accent text-muted-foreground">
-                Available for opportunities
+                CSE Student • Open to Opportunities
               </span>
             </motion.div>
 
@@ -48,7 +48,7 @@ const Hero = () => {
             >
               <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
                 <AnimatedLetters delay={0.5} className="gradient-text">
-                  CREATIVE
+                  PRAVEEN V
                 </AnimatedLetters>
                 <br />
                 <span className="text-foreground">
@@ -68,7 +68,7 @@ const Hero = () => {
             >
               <p className="text-xl md:text-2xl text-muted-foreground font-body max-w-2xl mx-auto">
                 <TypewriterText delay={1.4}>
-                  Building immersive digital experiences with cutting-edge technologies
+                  Computer Science & Engineering Student • Passionate Developer
                 </TypewriterText>
               </p>
             </motion.div>
@@ -135,9 +135,9 @@ const Hero = () => {
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { icon: Code2, value: "50+", label: "Projects Completed" },
-                { icon: Briefcase, value: "5+", label: "Years Experience" },
-                { icon: Mail, value: "100%", label: "Client Satisfaction" },
+                { icon: Code2, value: "10+", label: "Projects Completed" },
+                { icon: Briefcase, value: "CSE", label: "Engineering Student" },
+                { icon: Mail, value: "100%", label: "Dedication" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
