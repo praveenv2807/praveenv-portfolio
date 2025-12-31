@@ -5,6 +5,7 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { GlowButton } from "@/components/ui/GlowButton";
 import { Send, Mail, MapPin, Phone, CheckCircle, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -20,18 +21,39 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast.success("Message sent successfully!");
-    
-    // Reset after animation
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormState({ name: "", email: "", subject: "", message: "" });
-    }, 3000);
+    try {
+      const { data, error } = await supabase.functions.invoke('submit-contact', {
+        body: formState
+      });
+
+      if (error) {
+        console.error('Submission error:', error);
+        toast.error(error.message || "Failed to send message. Please try again.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      if (data?.error) {
+        console.error('Validation error:', data.details);
+        toast.error(data.details?.join(', ') || data.error);
+        setIsSubmitting(false);
+        return;
+      }
+
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      toast.success("Message sent successfully!");
+      
+      // Reset after animation
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormState({ name: "", email: "", subject: "", message: "" });
+      }, 3000);
+    } catch (error) {
+      console.error('Unexpected error:', error);
+      toast.error("An unexpected error occurred. Please try again.");
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
