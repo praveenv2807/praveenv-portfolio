@@ -48,6 +48,18 @@ Vercel
 Netlify
 
 Lovable
+---
+Step 2: Move into the project directory
+cd praveenv-portfolio
+---
+Step 3: Install dependencies
+npm install
+---
+Step 4: Start the development server
+npm run dev
+
+After running the above command, the project will start and a local preview link will appear in the terminal.
+---
 
 After deployment, update the Live Website link at the top of this file.
 
@@ -57,4 +69,5 @@ After deployment, update the Live Website link at the top of this file.
 
 🐙 GitHub: https://github.com/praveenv2807
 
-💼 LinkedIn: https://linkedin.com/in/praveen-v-6b2484329
+💼 LinkedIn: www.linkedin.com/in/praveen-v-6b2484329
+
