@@ -4,6 +4,7 @@ This is my personal portfolio website developed to showcase my skills, projects,
 The website is modern, responsive, and built using the latest web technologies.
 
 🔗 **Live Website:** http://10.130.46.242:8080/ 
+---
 📂 **GitHub Repository:** https://github.com/praveenv2807/praveenv-portfolio
 
 ---
