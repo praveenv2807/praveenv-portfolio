@@ -1,6 +1,6 @@
 # Praveen V – Personal Portfolio Website 🌐
 
-This is my personal portfolio website developed to showcase my skills, projects, certifications, and contact details.  
+This is my personal portfolio website developed to showcase my skills, complete projects, certifications, and contact details.  
 The website is modern, responsive, and built using the latest web technologies.
 
 🔗 Live Website: https://praveenv-portfolio.vercel.app
